@@ -29,16 +29,16 @@ Abaixo, está a tabela de comandos DTMF para o controle da chamada:
 2. Edite o arquivo `extensions_custom.conf` e insira o bloco de código fornecido.
    ```
    [from-internal-custom]
-    ; --- INÍCIO DO MÓDULO DE MONITORAMENTO ---
-    ; Descrição: Permite espiar (Spy) e sussurrar (Whisper) em ramais PJSIP
-    ; Gatilho: 222 + Número do Ramal (Ex: 2222000)
+   ; --- INÍCIO DO MÓDULO DE MONITORAMENTO ---
+   ; Descrição: Permite espiar (Spy) e sussurrar (Whisper) em ramais PJSIP
+   ; Gatilho: 222 + Número do Ramal (Ex: 2222000)
 
-    exten => _222.,1,NoOp(Iniciando Monitoramento: Supervisor ${CALLERID(num)} -> Alvo ${EXTEN:3})
-    ; 1. Autenticação: Exige PIN para evitar acesso não autorizado
-     same => n,Authenticate(1234)
+   exten => _222.,1,NoOp(Iniciando Monitoramento: Supervisor ${CALLERID(num)} -> Alvo ${EXTEN:3})
+   ; 1. Autenticação: Exige PIN para evitar acesso não autorizado. O PIN pode e deve ser alterado.
+    same => n,Authenticate(1234)
  
    ; 2. Feedback Sonoro: Avisa o supervisor para aguardar a conexão
-     same => n,Playback(pls-wait-connect-call)
+    same => n,Playback(pls-wait-connect-call)
    
    ; 3. Execução do ChanSpy:
    ; Flag 'd': Permite alternar modos usando o teclado (4, 5 ou 6)
