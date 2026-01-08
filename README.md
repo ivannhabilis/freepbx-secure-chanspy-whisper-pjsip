@@ -26,7 +26,10 @@ Abaixo, está a tabela de comandos DTMF para o controle da chamada:
 ### Guia de Instalação Rápida
 
 1. Acesse a página de configurações customizadas: `Admin, Config Edit`.
-2. Edite o arquivo `extensions_custom.conf` e insira o bloco de código fornecido.
+   <div align="center">
+     <img src="src/chanspy-whisper-1.png" alt="pagina_Admin_Config-Edit">
+   </div>
+3. Edite o arquivo `extensions_custom.conf` e insira o bloco de código fornecido.
    ```
    [from-internal-custom]
    ; --- INÍCIO DO MÓDULO DE MONITORAMENTO ---
@@ -51,6 +54,11 @@ Abaixo, está a tabela de comandos DTMF para o controle da chamada:
    ; --- FIM DO MÓDULO ---
 
    ```
+
+   <div align="center">
+     <img src="src/chanspy-whisper-2.png" alt="pagina_Admin_Config-Edit">
+   </div>
+   
 4. **Atenção ao Offset:** O código utiliza `${EXTEN:3}`. Isso significa que se o prefixo for `222`, os 3 primeiros dígitos serão ignorados para identificar o ramal alvo.
 5. Aplique as configurações clicando em `Submit` e depois em `Apply`.
 
