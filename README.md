@@ -19,7 +19,7 @@ Abaixo, está a tabela de comandos DTMF para o controle da chamada:
 | **Pressionar 4** | **Modo Whisper** | O supervisor fala e apenas o agente interno ouve. |
 | **Pressionar 5** | **Modo Barge** | Transforma a chamada em conferência (todos se ouvem). |
 | **Pressionar 6** | **Modo Listen** | O supervisor apenas ouve (mudo para ambos os lados). |
-| **Pressionar *** | **Next Channel** | Pula para a próxima chamada ativa se o alvo for um grupo. |
+| **Pressionar \*** | **Next Channel** | Pula para a próxima chamada ativa se o alvo for um grupo. |
 
 ---
 
